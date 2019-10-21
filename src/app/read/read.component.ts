@@ -16,7 +16,7 @@ export class ReadComponent implements OnInit {
   ngOnInit() {
 
     this.movieService.GetMovieInformation().subscribe((data)=>{
-      this.Mymovies = data.Search;
+      this.Mymovies = data.myMovies;
       console.log(this.Mymovies);
 
 
